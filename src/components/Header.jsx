@@ -1,6 +1,6 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import SearchIcon from '@mui/icons-material/Search';
+import { useLocation, NavLink } from "react-router-dom";
+import SearchIcon from "@mui/icons-material/Search";
 
 function Header() {
   const location = useLocation();
@@ -9,15 +9,20 @@ function Header() {
   } else {
     return (
       <div className="bg-white h-20 flex items-center justify-between shadow-xl">
+        <div className="flex items-center ">
         <div className="logo w-24 h-24 flex ml-2 mb-4">
-          <img src="../public/images/logo.png" alt="logo" />
+          <img src="../public/images/logo.jpg" alt="logo" />
         </div>
         <div className="flex gap-10 font-bold text-xl text-primary">
-          <p>SURVEY</p>
-          <p>PROJECTS</p>
-          <p>RESEARCH</p>
-          <p>ABOUT</p>
+        <NavLink to='/home'><p>HOME</p></NavLink>
+          <NavLink to='/survey'><p>SURVEY</p></NavLink>
+          <NavLink to='/projects'><p>PROJECTS</p></NavLink>
+          <NavLink to='/research'><p>RESEARCH</p></NavLink>
+          <NavLink to='/about'><p>ABOUT</p></NavLink>
         </div>
+
+        </div>
+        
         <div className="flex items-center gap-2 mr-4">
           <div className="relative">
             <input

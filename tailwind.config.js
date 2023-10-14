@@ -14,8 +14,8 @@ export default {
         175: '1.75',
       },
       colors: {
-        primary: '#353b8e',
-        secondary: '#50b0de',
+        primary: '#f497af',
+        secondary: '#ea3665',
       },
       // fontFamily: {
       //   'poppins': ['Poppins', 'sans'],
